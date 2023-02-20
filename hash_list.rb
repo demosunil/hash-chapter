@@ -13,4 +13,11 @@ list_of_people = [
   { :name => "Fatimah", :age => 31 },
   { :name => "Carl", :age => 9 },
 ]
-
+a = list_of_people.length
+i = 0
+while i <= a-1
+  if list_of_people[i].fetch(:age) >=16
+    p list_of_people[i].fetch(:name)
+  end
+  i = i + 1
+end
